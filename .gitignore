@@ -1,0 +1,33 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# ---- 测试 ----
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ---- 运行时输出 ----
+output/
+*.json.tmp
+
+# ---- 模型与二进制（可重新生成/下载，不入库）----
+*.pt
+*.onnx
+*.m
+*.pkl
+*.zip
+
+# ---- 人脸上库存档（含生物特征，严禁入库）----
+database/
+
+# ---- 本地 IDE / 工具配置 ----
+.claude/
+.agents/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

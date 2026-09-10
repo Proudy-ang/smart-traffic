@@ -1,0 +1,23 @@
+# 智慧交通 — 人员B 依赖
+# ============================================================
+# ARM64 (aarch64) Linux 部署:
+#   1) sudo apt install python3-opencv python3-pip python3-serial -y
+#   2) pip install -r requirements.txt
+#
+# Windows 开发:
+#   pip install -r requirements.txt
+#   (opencv-contrib-python 需先安装)
+# ============================================================
+
+# === 人员A 模块依赖 ===
+ultralytics>=8.0
+numpy
+joblib
+pyserial
+
+# === 人员B 模块依赖 ===
+pymodbus>=3.0
+paho-mqtt>=2.0
+
+# === 测试 ===
+pytest>=9.0

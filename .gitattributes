@@ -1,0 +1,11 @@
+# 归一化行尾，避免 Windows 提交的 CRLF 破坏 Linux 上的 shell 脚本
+* text=auto
+
+# shell 脚本必须保持 LF，否则在边缘套件（Linux）上执行会报错
+*.sh text eol=lf
+
+# 二进制文件不做行尾转换
+*.pt  binary
+*.onnx binary
+*.m   binary
+*.pkl binary
